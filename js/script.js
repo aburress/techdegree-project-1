@@ -58,5 +58,9 @@ let quotes = [
   }
 ];
 
+// Refreshes quote every 5 seconds
+setInterval(printQuote, 5000);
+
+// Option for button:
 // Trigger event listener to call the printQuote() function
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+// document.getElementById('loadQuote').addEventListener("click", printQuote, false);
