@@ -31,8 +31,8 @@ function printQuote() {
     message += "<span class = 'year'>" + randomQuote.year + "</span>";
   }
   message += "</p>";
-  if (randomQuote.author) {
-    message += "<p class = 'source'>" + randomQuote.author + "</p>";
+  if (randomQuote.tags) {
+    message += "<p class = 'tags'> Taught through " + randomQuote.tags + "</p>";
   }
   let quoteDiv = document.getElementById("quote-box");
   quoteDiv.innerHTML = message;
@@ -45,35 +45,35 @@ let quotes = [
     source: "Albus Dumbledore",
     year: 2000,
     citation: "Harry Potter and The Goblet of Fire",
-    author: "J.K. Rowling"
+    tags: "inspiration"
   },
   {
     quote: "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?",
     source: "Albus Dumbledore",
     year: 2007,
     citation: "Harry Potter and the Deathly Hallows",
-    author: "J.K. Rowling"
+    tags: "inspiration"
   },
   {
     quote: "But you know, happiness can be found even in the darkest of times, if one only remembers to turn on the light.",
     source: "Albus Dumbledore",
     year: 1999,
     citation: "Harry Potter and the Prisoner of Azkaban",
-    author: "J.K. Rowling"
+    tags: "reflection"
   },
   {
     quote: "It is our choices, Harry, that show what we truly are, far more than our abilities.",
     source: "Albus Dumbledore",
     year: 1998,
     citation: "Harry Potter and the Chamber of Secrets",
-    author: "J.K. Rowling"
+    tags: "reflection"
   },
   {
     quote: "Words are, in my not-so-humble opinion, our most inexhaustible source of magic. Capable of both inflicting injury, and remedying it.",
     source: "Albus Dumbledore",
     year: 2007,
     citation: "Harry Potter and the Deathly Hallows",
-    author: "J.K. Rowling"
+    tags: "caution"
   }
 ];
 
